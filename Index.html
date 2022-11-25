@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="Container">
+            <div class="Nav">
+                <div id="head-logo">
+                    <h1>L-Portfolio</h1>
+                </div>
+                <div class="navigation" id="myNav">
+                    <nav>
+                        <ul>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Skills">Skills</a></li>
+                            <li><a href="#Projects">Projects</a></li>
+                            <li><a href="#Contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="open" id="open" onclick="down()">
+                    <p>&#9776;</p>
+                </div>
+                <div class="close" id="close" onclick="up()">
+                    <p class="material-icons">&#xe5cd;</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="Section">
+        <div class="sec">
+            <div class="Container">
+            <div class="middle">
+                <h2>Hi, My name is Lungani Buthelezi</h2>
+                <h4>
+                    I am a self-taught programmer and I love coding
+                </h4>
+                <a href="#About">Hire me</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="About">
+        <div class="Container">
+            <div class="about">
+                <div class="image">
+                    <img src="/Images/20220605_110759.jpg" alt="">
+                </div>
+                <div class="contant">
+                    <h3>About Me</h3>
+                    <p>
+                        I am a hard working, self-motivated, responsive and reliable person. 
+                        I can word well both with a team and on my own.
+                        I have learned a lot on my own and I am an enthusiastic programmer and I love coding. 
+                        I am always on a hunt for information.
+                    </p>
+                    <a href="https://docs.google.com/document/d/1c1zZgnbxOyAAmA7WuLNAWR4CrqbK3mws/edit?usp=sharing&ouid=102934051316857488115&rtpof=true&sd=true" download>Download Resume <i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <div class="Container">
+            <div class="start">
+                <div class="title">
+                    <h3>Skills</h3>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><img src="/Icons/1280px-HTML5_logo_and_wordmark.svg.png" alt=""> HTML</li>
+                        <li><img src="/Icons/1280px-CSS3_logo_and_wordmark.svg.png" alt=""> CSS</li>
+                        <li><img src="/Icons/javascript_logo_unofficial.png" alt=""> JavaScript</li>
+                        <li><img src="/Icons/bootstrap-logo.png" alt=""> BootStrap</li>
+                        <li><img src="/Icons/jquery-logo-vertical_large_square.png" alt=""> jQuery</li>
+                    </ul>
+                    <ul>
+                        <li><img src="/Icons/React-icon.svg.png" alt=""> React</li>
+                        <li><img src="/Icons/reactjs-redux.png" alt=""> React + Redux</li>
+                        <li><img src="/Icons/Csharp_Logo.png" alt=""> C#</li>
+                        <li><img src="/Icons/aspnet.png" alt=""> Asp.net Mvc</li>
+                        <li><img src="/Icons/1_YoHBCwurgo2bDO6Piozp5A.png" alt=""> Asp.net MVC Core</li>
+                        <li><img src="/Icons/2560px-Node.js_logo.svg.png" alt=""> Nodejs</li>
+                        
+                    </ul>
+                    <ul>
+                        <li><img src="/Icons/express.jpeg" alt=""> Express</li>
+                        <li><img src="/Icons/github.png" alt=""> GitHub</li>
+                        <li><img src="/Icons/MongoDB.png" alt=""> MongoDb</li>
+                        <li><img src="/Icons/sql-server.png" alt=""> SQL</li>
+                        <li><img src="/Icons/kindpng_4753875.png" alt=""> System Analysis And Design</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <div class="Container">
+            <div class="start">
+                <div class="title">
+                    <h3>Projects</h3>
+                </div>
+                <div class="grid"> 
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/realestate.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">REAL-ESTATE MANANGEMENT </h1>
+                                <p class="card-text"> 
+                                    This is full stack web site created using ASP.NET MVC.
+                                     It includes authentication and has three user roles and email verification. 
+                                     It is full CRUD application,
+                                     also users can browse the selling properties and it allows clients to chat with agents.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/movie.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">MOVIE BOOKING </h1>
+                                <p class="card-text"> 
+                                    This a full-stack application created using Asp.Net MVC. 
+                                    It includes authentication and has two user roles. 
+                                    It verifies user email and users can recover forgotten password. Users can search for movies,
+                                     watch movie trailer, select a date, book and make online payment.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/tas-manager.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">TASK-MANAGER </h1>
+                                <p class="card-text"> 
+                                    This a MERN stack web application. The front-end is created using react-redux and the back end using Node and Express and Mongo for the database.
+                                     It includes authentication and it a complete CRUD application. 
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/temparature.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">Weather web site</h1>
+                                <p class="card-text"> 
+                                    This web site is created using react. 
+                                    It get the data of Weather forecust using an api and it has city auto complete api.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/hairpalice.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">hairpalice web site</h1>
+                                <p class="card-text"> 
+                                    This web site is only the front end.
+                                     It is created using html, css and javascript.
+                                     It has 7 pages , including a landing page, register, login and other.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/landing.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">Learning landing page</h1>
+                                <p class="card-text"> 
+                                    This web page is created using only html and css.
+                                    It a fully responsive page with fixed top nav bar.
+                                    The code for css includes flex box.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/tribule.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">Tribute page</h1>
+                                <p class="card-text"> 
+                                    This web page is only created using html and css.
+                                    It is a responsive web page.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/login.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">Login page</h1>
+                                <p class="card-text"> 
+                                    This page is created using html and css.
+                                    It is a responsive page.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/images slinder.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">Image slider</h1>
+                                <p class="card-text"> 
+                                   This page is created using html, css, javascript and sliderjs.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <img class="card-img" src="/Projects/Survey.png" alt="">
+                            <div class="card-content">
+                                <h1 class="card-header">Survey page</h1>
+                                <p class="card-text"> 
+                                    This page is created using html and css.
+                                    It is a responsive web page.
+                                </p>
+                                <button class="card-btn">
+                                    View Code <span>&rarr;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contacts">
+        <div class="Container">
+            <div class="box start">
+                <div class="title">
+                    <h3>Contacts</h3>
+                    <hr/>
+                </div>
+                <div class="contacts">
+                    <p>Cellphone number: <br/>082 338 1278</p>
+                    <p>Cellphone number 2:<br/>066 406 2410 </p>
+                    <p>Email:<br/> lunganintuthuko1@gmail.com</p>
+                    <p>Email 2:<br/> buthelezilungani11@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="foot">
+        <div class="Container">
+            <div>
+                <div class="foot-con">
+                    <div class="social">
+                        <h5>Social media</h5>
+                        <p><a href="#" class="fa fa-facebook"></a> Facebook</p>
+                        <p><a href="#" class="fa fa-instagram"></a> Instagram</p>
+                        <p><i class="fa fa-whatsapp"></i> 082 338 1278</p>
+                    </div>
+                    <div class="social">
+                        <h5>L-PORTFOLIO</h5>
+                        <p><a href="#" >About me</a> </p>
+                        <p><a href="#" >Projects</a> </p>
+                        <p><a href="">Hire me</a> </p>
+                        <p><a href="">My Skills</a> </p>
+                    </div>
+                </div><hr/>
+                <div class="foot">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, facilis.</p>
+                </div><hr/>
+                <div class="foot">
+                    <p>L-Portfolio @2022 Lungani Ntuthuko Buthelezi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/Style/nav.js"></script>
+</html>

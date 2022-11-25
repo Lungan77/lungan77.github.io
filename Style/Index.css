@@ -1,0 +1,308 @@
+
+#About{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(212, 209, 209);
+    margin: 0px;
+}
+
+.start {
+    position: absolute;
+}
+
+.about{
+    display: flex;
+}
+
+.image{
+    width: 350px;
+    height: 80vh;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.contant{
+    margin-top: 60px;
+    width: 45%;
+}
+
+.contant h3 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+}
+
+.contant p {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.contant a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+@media(max-width: 800px) {
+
+    .contant {
+        margin-top: 30px;
+    }
+
+    .contant h3 {
+        font-size: 2em;
+    }
+
+    .contant p {
+        font-size: 1.1em;
+    }
+
+}
+
+@media(max-width: 600px){
+    .image{
+        display: none;
+    }
+
+    .contant {
+        margin-top: 5px;
+        margin: auto;
+        text-align: center;
+        width: 95%;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+}
+
+#Skills{
+    background-color: rgb(61, 59, 70);
+    height: 100vh;
+    color: aliceblue;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: auto;
+}
+
+.title h3{
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 3em;
+}
+
+.list{
+    display: flex;
+}
+
+.list li{
+    font-size: 1.5em;
+    list-style: none;
+    margin: 15px;
+}
+
+.list li img{
+    width: 50px;
+}
+@media (max-width: 1000px) {
+    .title h3 {
+        font-size: 2.5em;
+        letter-spacing: 3px;
+    }
+
+    .list li{
+        font-size: 1.2em;
+    }
+
+    .list li img{
+        width: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title h3 {
+        font-size: 2em;
+    }
+
+    .list{
+        flex-direction: column;
+    }
+
+    .list li {
+        font-size: 1em;
+        margin: 0px;
+    }
+
+    .list li img {
+        display: none;
+    }
+}
+
+#Projects {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(238, 232, 232);
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 76vh;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    overflow: scroll;
+    align-items: start;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem agba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    width: 350px;
+    margin: 10px;
+}
+
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    .grid-item{
+        width: 95%;
+    }
+}
+
+#Contacts {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(212, 209, 209);
+    text-align: center;
+}
+
+.box {
+    background-color: rgb(61, 59, 70);
+    height: 95vh;
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contacts {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+@media(max-width: 800px) {
+    .contacts {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+}
+
+#foot {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #0d0d0d;
+    position: absolute;
+}
+
+.social h5{
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.social p{
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+.social a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.fa-instagram {
+    background: #d6097a;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.fa-whatsapp{
+    background: rgb(28, 235, 10);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.foot-con {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot {
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .social h5 {
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }
+
+    .social p {
+        font-size: 1em;
+    }
+}
