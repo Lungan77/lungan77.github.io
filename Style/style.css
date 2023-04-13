@@ -1,52 +1,58 @@
-body {
+* {
     margin: 0px;
     font-family: 'Inconsolata', monospace;
     box-sizing: border-box;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 .Container {
     width: 85%;
-    margin:auto;
-    position: relative;
+    padding-top: 30px;
+    margin: auto;
 }
 
 #header {
-    background-color: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
     width: 100%;
-    color: gainsboro;
+    color: whitesmoke;
     text-align: center;
     font-family: 'Inconsolata', monospace;
-    position: absolute;
-    z-index: 13;
+    z-index: 130;
 }
 
-.Nav{
+.Nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 20px 50px;
+    width: 100%;
+    z-index: 23;
 }
 
-#head-logo{
+#head-logo {
     font-size: 1em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-@media(max-width: 800px){
+@media(max-width: 800px) {
     .header {
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.85) !important;
     }
 
-    #head-logo{
+    #head-logo {
         font-size: 0.7em;
     }
 
-    .Container{
+    .Container {
         width: 90%;
     }
 
-    .Full{
+    .Full {
         display: flex;
         flex-direction: column;
     }
@@ -57,22 +63,20 @@ body {
         font-size: 0.5em;
     }
 
-    .Container{
+    .Container {
         width: 98%;
     }
 }
 
 .navigation {
-    position: absolute;
-    right: 7.5%;
-    margin-top: 17px;
+    margin-top: 10px;
 }
 
-.navigation ul{
-    display:flex;
+.navigation ul {
+    display: flex;
 }
 
-.navigation li{
+.navigation li {
     list-style: none;
     margin-right: 5px;
 }
@@ -88,62 +92,36 @@ body {
     border-radius: 5px;
 }
 
-.login li{
-    background-color: black !important;
-}
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
     .Nav li a {
         font-size: 0.9em;
     }
 
-    .login {
-        margin-left: -20px;
-    }
 }
 
-@media(max-width: 800px){
-    .navigation{
+@media(max-width: 800px) {
+    .navigation {
         position: initial;
     }
 }
 
-.search input {
-    padding: 2px;
-    border-radius: 2px;
-    border: none;
-}
-
-.search button {
-    float: right;
-}
-
-.search button:hover{
-    background-color: cornflowerblue;
-}
-
-@media (max-width: 1100px) {
-    .search{
-        display: none;
-    }
-}
-
-@media(max-width: 800px){
-    .navigation{
+@media(max-width: 800px) {
+    .navigation {
         display: none;
     }
 
 }
 
-.open{
+.open {
     display: none;
     position: absolute;
     right: 7.5%;
-    padding: 0px;
-    top: -20px;
+    padding: 10px;
+    top: 0px;
 }
 
-.open p{
+.open p {
     font-size: 1.8em;
     padding: 0px;
     cursor: pointer;
@@ -154,16 +132,16 @@ body {
     position: absolute;
     right: 7.5%;
     padding: 0px;
-    top: -15px;
+    top: 15px;
 }
 
-.close p{
-     font-size: 1.8em;
+.close p {
+    font-size: 1.8em;
     padding: 0px;
     cursor: pointer;
 }
 
-@media(max-width: 800px){
+@media(max-width: 800px) {
     .Responsive {
         display: block;
     }
@@ -171,15 +149,21 @@ body {
 
 @media(max-width: 400px) {
     .open {
-        top: -19px;
+        top: 3px;
+        right: 10px;
     }
-    .open p{
+    .close{
+        top: 10px;
+        right: 20px;
+    }
+
+    .open p {
         font-size: 1.5em;
     }
 }
 
- @media(max-width: 800px){
-    .responsive{
+@media(max-width: 800px) {
+    .responsive {
         display: block;
     }
 
@@ -187,7 +171,7 @@ body {
         position: absolute;
         top: auto;
         right: auto;
-        left:auto;
+        left: auto;
         margin-top: 40px;
         text-align: center;
     }
@@ -216,30 +200,30 @@ body {
         border-radius: 5px;
     }
 
-    .login {
-        margin-left: -40px;
-    }
-
- }
+}
 
 
 .Section {
     background-image: url('/Images/blake-connally-IKUYGCFmfw4-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    z-index: 0;
 }
-@media(max-width: 800px){
+
+@media(max-width: 800px) {
     .Section {
         background-image: url('/Images/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg')
     }
 }
-.sec{
+
+.sec {
     background-color: rgba(0, 0, 0, 0.65);
-    z-index: 10;
-    position:absolute;
-    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -252,45 +236,49 @@ body {
     border-radius: 0% 150% 10px 10px;
 }
 
-.middle h2{
+.middle h2 {
     font-size: 3em;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-family: 'Cambria Math';
-   
+    margin-bottom: 15px;
+
 }
 
-.middle h4{
+.middle h4 {
     font-size: 1.5em;
-   letter-spacing: 2px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
 }
 
-.middle a{
+.middle a {
     padding: 10px;
-    color:aliceblue;
-    background-color:darkgray;
+    color: aliceblue;
+    background-color: darkgray;
     text-decoration: none;
     border-radius: 5px;
     color: black;
     font-weight: 600;
 }
 
-@media(max-width: 1000px){
-    .middle{
+@media(max-width: 1000px) {
+    .middle {
         width: 80%;
         margin-top: 150px;
     }
-    .middle h2{
+
+    .middle h2 {
         font-size: 2.5em;
     }
 }
 
-@media(max-width: 1000px){
-    .middle{
+@media(max-width: 1000px) {
+    .middle {
         width: 80%;
         margin-top: 150px;
     }
-    .middle h2{
+
+    .middle h2 {
         font-size: 2.5em;
     }
 
@@ -302,22 +290,22 @@ body {
         margin-top: 120px;
     }
 
-        .middle h2 {
-            font-size: 2em;
-        }
+    .middle h2 {
+        font-size: 2em;
+    }
 }
 
-@media(max-width: 400px){
-    .middle{
+@media(max-width: 400px) {
+    .middle {
         width: 100%;
         margin-top: 100px;
     }
 
-    .middle h2{
+    .middle h2 {
         font-size: 1.3em;
     }
-    .middle h4{
+
+    .middle h4 {
         font-size: 1em;
     }
 }
-
